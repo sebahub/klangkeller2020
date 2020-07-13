@@ -1,0 +1,40 @@
+picture
+  width: 100%
+  height: auto
+  img
+    width: 100%
+
+.line
+  height: 1px
+  width: 100%
+  background-color: lighten($color-accent, 60%, )
+  margin-bottom: 0.5em
+@media screen and ( min-width: 768px )
+  .container
+    //display: flex
+    columns: 2
+main
+  h4
+    +font-light
+    +uppercase
+  h2
+    margin-bottom: -0.25em
+  h2, h3
+    font-family: 'Bebas Neue'
+  h3
+    margin-top: 0.25em
+    font-size: 1.25em
+  .website
+    text-transform: lowercase
+    color: darken($color-light, 60% )
+    +font-light
+  section
+    margin-bottom: 3em
+  h3
+    //margin-bottom: 1em
+  span
+    color: $color-accent
+  p
+    margin-bottom: 1em
+    color: darken($color-light, 60% )
+    +font-light

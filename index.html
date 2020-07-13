@@ -3,38 +3,73 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Gulp Testing Place</title>
+    <title>KlangKeller - Livestreams and more</title>
     <link rel="stylesheet" href="/assets/css/styles.min.css"/>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"/><script data-ad-client="ca-pub-7150828912007029" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
   <body>
-    <nav class="nav_upper">
-      <div class="nav_bar">
-        <div class="logo">
-          <h1>LOGO</h1>
-        </div>
-        <div class="nav_hamburger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="lines_flex">
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <nav class="nav_offCanvas">
-      <ul class="nav_menu">
-        <li> <a href="#">Home</a></li>
-        <li> <a href="#">About</a></li>
-        <li> <a href="#">Vita</a></li>
-        <li>
-          <ul class="nav_menu_social">
-            <li> <a href="#"> <img src="" alt=""/></a></li>
-            <li> <a href="#"> <img src="" alt=""/></a></li>
+    <!--include topbar.pug-->
+    <div class="wrapper">
+      <div class="topbar flex">
+        <div class="logo"><a href="./"><img class="logo-svg" src="./assets/icons/kk_logo.svg" alt=""/></a></div>
+        <menu>
+          <ul class="menu">
+            <li> <a href="#now">Now</a></li>
+            <li> <a href="#next">Next</a></li>
+            <li><a href="#prev">Previous</a></li>
+            <!--lia.mail(href="mailto:hello@klangkeller.info") hello@klangkeller.info
+            -->
           </ul>
-        </li>
-      </ul>
-    </nav>
+        </menu>
+      </div>
+      <main>
+        <section id="now">
+          <h4>Aktueller Stream</h4>
+          <div class="line"></div>
+          <article class="normahl"><a href="https://www.youtube.com/watch?v=w6l9kz0vq9Y" target="_blank" rel="noopener noreferrer">
+              <picture><img src="./assets/images/normahl/normahl_w_1920.jpg" alt="" sizes="" srcset="./assets/images/normahl/normahl_w_1920.jpg 1920w, ./assets/images/normahl/normahl_w_1600.jpg 1600w, ./assets/images/normahl/normahl_w_1200.jpg 1200w, ./assets/images/normahl/normahl_w_480.jpg 480w"/></picture></a>
+            <ul class="flex-container">
+              <h2 class="band-name">Normahl</h2><a class="website" href="http://normahl.de" target="_blank" rel="noopener noreferrer">www.normahl.de</a>
+            </ul>
+            <h3 class="date">Beginnt am <span>16.07</span> um <span>20.15</span></h3>
+            <p class="band-desc">An ihren Songtext halten sich die Jungs von Normahl - einer der dienstältesten Punkbands im Land - nun schon seit über 40 Jahren: laut, schnell, angriffslustig, energiegeladen bringen sie ihre Songs auf die Bühne.</p>
+            <div class="social-media"><a href="https://www.facebook.com/normahl.band/" target="_blank" rel="noopener noreferrer"><img class="facebook" src="./assets/icons/social/facebook.svg" alt=""/></a></div>
+          </article>
+        </section>
+        <div class="container">
+          <section id="next">
+            <h4>Nächster Stream</h4>
+            <div class="line"></div>
+            <article class="lapaka">
+              <picture><img src="./assets/images/lapaka/lapaka_w_1920.jpg" alt="" sizes="" srcset="./assets/images/lapaka/lapaka_w_1920.jpg 1920w, ./assets/images/lapaka/lapaka_w_1600.jpg 1600w, ./assets/images/lapaka/lapaka_w_1200.jpg 1200w, ./assets/images/lapaka/lapaka_w_480.jpg 480w"/></picture>
+              <h2 class="band-name">lapaka</h2>
+              <h3 class="date">Beginnt am <span>18.07</span> um <span>20.15</span></h3>
+              <p class="band-desc">Bei L’APAKA geht es um das Individuum in der Gesellschaft. Es handelt sich um Wut auf eingefahrene Paradigmen und die Orientierungslosigkeit im Leben, die selbstironisch verpackt und in einem roten Faden aller jüngst veröffentlichten Songs erkennbar bleibt.</p>
+              <div class="social-media"><a href="https://www.facebook.com/lapaka.band/" target="_blank" rel="noopener noreferrer"><img class="facebook" src="./assets/icons/social/facebook.svg" alt=""/></a><a href="https://open.spotify.com/artist/7zWNlAME69RxFytPVwVHJM?si=Ly3m-ULVRM--Z-Z3KGvJnw" target="_blank" rel="noopener noreferrer"><img class="spotify" src="./assets/icons/social/spotify.svg" alt=""/></a><a href="https://www.instagram.com/lapaka.band/" target="_blank" rel="noopener noreferrer"><img class="instagram" src="./assets/icons/social/instagram.svg" alt=""/></a><a href="https://www.youtube.com/channel/UCHWOVrECZFb3IPJ9Y9-gMbw?view_as=subscriber" target="_blank" rel="noopener noreferrer"><img class="youtube" src="./assets/icons/social/youtube.svg" alt=""/></a></div>
+            </article>
+          </section>
+          <section id="prev">
+            <h4>Vergangener Stream</h4>
+            <div class="line"></div>
+            <article class="xylo">
+              <picture><img src="./assets/images/xylo/xylo_w_1920.jpg" alt="" sizes="" srcset="./assets/images/xylo/xylo_w_1920.jpg 1920w, ./assets/images/xylo/xylo_w_1600.jpg 1600w, ./assets/images/xylo/xylo_w_1200.jpg 1200w, ./assets/images/xylo/xylo_w_480.jpg 480w"/></picture>
+              <h2 class="band-name">Xylospongium</h2><a class="website" href="http://xylospongium.de" target="_blank" rel="noopener noreferrer">www.xylospongium.de</a>
+              <p class="band-desc">"Klingt wie Motörhead mit einer gewaltigen Prise Neuer Deutscher Welle." - Stuttgarter Zeitung<br> "Ich hör mir die Vorband sonst nie an!" - Funky von Ton Steine Scherben<br> "Geile Mucke, können wir bloß nicht verkaufen." - Universal Music</p>
+              <div class="social-media"><a href="https://www.facebook.com/Xylospongium/" target="_blank" rel="noopener noreferrer"><img src="./assets/icons/social/facebook.svg" alt=""/></a><a href="https://open.spotify.com/artist/4h5JkA9Oy6QrhdzfEnbQUJ" target="_blank" rel="noopener noreferrer"><img src="./assets/icons/social/spotify.svg" alt=""/></a><a href="https://www.instagram.com/xylospongium/" target="_blank" rel="noopener noreferrer"><img src="./assets/icons/social/instagram.svg" alt=""/></a><a href="https://www.youtube.com/channel/UC26Dxd3ZuffSUVzzsfngrEg" target="_blank" rel="noopener noreferrer"><img class="youtube" src="./assets/icons/social/youtube.svg" alt=""/></a></div>
+            </article>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <ul class="privacy">
+          <li>Datenschutz / Impressum</li>
+          <li class="link">Made with<img src="./assets/icons/social/love.svg" alt=""/>
+            <p>by</p><a href="http://schaal.design" target="_blank" rel="noopener noreferrer">schaal.design</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
     <script src="/assets/js/script.min.js"></script>
   </body>
 </html>

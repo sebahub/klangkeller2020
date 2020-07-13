@@ -1,19 +1,16 @@
-console.log("Hello");
-let navBurger = document.querySelector('.nav_hamburger');
-let navBurgerLines = document.querySelectorAll('.line');
-let navOffCanvas = document.querySelector('.nav_offCanvas');
+function toggleNav() {
+  let navButtonLines = document.querySelectorAll(
+    ".nav-element-burger-line"
+  );
+  let navMenu = document.querySelector("nav");
+  navMenu.classList.toggle("isOpen");
+  navButtonLines.forEach(line => {
+    line.classList.toggle("animation");
+  });
+  // let svgPath = document.querySelector('#logo-path');
+  let svgPath = document.querySelector('.logo-svg')
+  svgPath.classList.toggle("animation");
+  console.log(svgPath);
 
-console.log(navBurger);
-console.log(navBurgerLines);
-
-
-
-navBurger.addEventListener('click', function() {
-  this.classList.toggle('animation')
-    navBurgerLines.forEach(line => {
-      line.classList.toggle('animation');
-    });
-  navOffCanvas.classList.toggle('animation')
-
-})
-
+  
+}

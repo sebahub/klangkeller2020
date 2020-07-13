@@ -3,34 +3,18 @@ html(lang="de")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Gulp Testing Place
+    title KlangKeller - Livestreams and more
     link(rel="stylesheet", href="/assets/css/styles.min.css")
+    link(rel='shortcut icon' href='/favicon.ico' type='image/x-icon')
+    link(rel='icon' href='/favicon.ico' type='image/x-icon')
+
+    <script data-ad-client="ca-pub-7150828912007029" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   body
-    nav.nav_upper
-      .nav_bar
-        .logo
-          h1 LOGO
-        .nav_hamburger
-          .line
-          .line
-          .lines_flex
-            .line
-            .line
-    nav.nav_offCanvas
-      ul.nav_menu
-        li 
-          a(href="#") Home
-        li 
-          a(href="#") About
-        li 
-          a(href="#") Vita
-        li
-          ul.nav_menu_social
-            li 
-              a(href="#") 
-                img(src="", alt="")
-            li 
-              a(href="#") 
-                img(src="", alt="")
+    //include topbar.pug
+    .wrapper
+      include navigation.pug
+      main
+        include content.pug
+      include footer.pug
 
     script(src="/assets/js/script.min.js")

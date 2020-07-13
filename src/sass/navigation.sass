@@ -1,0 +1,44 @@
+// Topbar
+header
+  width: 100%
+
+.topbar
+  padding-top: 1.5em
+  //position: fixed
+  //z-index: 3
+  //width: 96%
+  //max-width: 1200px
+.menu
+  margin-top: 1em
+  font-size: 14px
+  display: flex
+  justify-content: space-between
+  max-width: 240px
+  li
+    //background: $color-dark
+    padding: 0.5em
+    &:first-child
+      background: $color-accent
+      a
+        color: $color-light
+  .mail
+    color: $color-light
+    font-size: 0.75em
+    background: $color-dark
+    padding: 0.75em
+.flex
+  //display: flex
+  justify-content: space-between
+  //align-items: self-end
+.logo
+  img
+    filter: 0
+    height: 2em
+    +easeInOutExpo
+    &.animation
+      filter: invert(99%) sepia(0%) saturate(2%) hue-rotate(114deg) brightness(112%) contrast(100%)
+
+@media screen and (min-width: 768px)
+  .logo
+    img
+      height: 3em
