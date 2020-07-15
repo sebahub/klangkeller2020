@@ -131,7 +131,7 @@ picture img {
 .line {
   height: 1px;
   width: 100%;
-  background-color: #ffb3d1;
+  background-color: #800032;
   margin-bottom: 0.5em;
 }
 
@@ -224,4 +224,142 @@ main p {
 
 .social-media .youtube {
   width: 36px;
+}
+
+footer {
+  padding: 3em;
+  background: #282828;
+}
+
+footer .privacy {
+  font-weight: 200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #e1e1e1;
+}
+
+footer .privacy img {
+  height: 1.2em;
+  padding: 0 0.2em;
+}
+
+footer .privacy a {
+  color: #e1e1e1;
+  text-transform: none;
+  font-weight: 200;
+}
+
+footer .privacy .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #800032;
+}
+
+footer .privacy .link, footer .privacy .dataprot {
+  border: 1px solid #e1e1e1;
+  padding: 0.5em;
+}
+
+footer .privacy .dataprot {
+  background: white;
+}
+
+footer .privacy .dataprot a {
+  color: #282828;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+.kk_banner {
+  font-family: 'Bebas Neue';
+  font-weight: 700;
+  background: #fafafa;
+  width: 500px;
+  height: 100px;
+  padding-left: 24px;
+  padding-top: 10px;
+  margin: auto;
+  margin-top: 20%;
+  border-radius: 12px;
+  color: #282828;
+}
+
+.kk_banner span {
+  color: #800032;
+}
+
+.bandname {
+  color: #800032;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 3.5em;
+}
+
+.kk_banner_content {
+  position: relative;
+  top: -12px;
+}
+
+.block-container {
+  font-size: 2.5em;
+  position: relative;
+  top: -28px;
+}
+
+.logo {
+  float: left;
+}
+
+.logo img {
+  height: 5.1em;
+}
+
+.date {
+  color: rgba(0, 0, 0, 0);
+  text-shadow: 0.05em 0.05em 0.05em rgba(250, 250, 250, 0.25), 0 0 0 #b3b3b3;
+  font-weight: 700;
+}
+
+#clockdiv {
+  font-family: 'Bebas Neue';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 600px;
+  font-size: 2em;
+  text-align: center;
+  margin: auto;
+  margin-top: 3em;
+}
+
+#clockdiv .time_field {
+  color: rgba(0, 0, 0, 0);
+  text-shadow: 0.05em 0.05em 0.05em rgba(250, 250, 250, 0.25), 0 0 0 #b3b3b3;
+  font-weight: 700;
+  background: -o-linear-gradient(278.9deg, #EEF1F5 4.98%, #E6E9EF 94.88%);
+  background: linear-gradient(171.1deg, #EEF1F5 4.98%, #E6E9EF 94.88%);
+  -webkit-box-shadow: inset 5px 5px 10px rgba(166, 180, 200, 0.75), inset -5px -5px 15px rgba(255, 255, 255, 0.75);
+  box-shadow: inset 5px 5px 10px rgba(166, 180, 200, 0.75), inset -5px -5px 15px rgba(255, 255, 255, 0.75);
+  width: 120px;
+  height: 3em;
+  padding-top: 0.25em;
+  border-radius: 5px;
+}
+
+#clockdiv .time_field .smalltext {
+  color: #800032;
 }
